@@ -3,10 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import logger from "sabio-debug";
 import PropTypes from "prop-types";
-
-const _logger = logger.extend("FileModal");
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -27,7 +24,6 @@ export default function FilesModal(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
-  _logger(props);
   let url = props.uploadedValues.uploadedUrl;
   let type = props.uploadedValues.uploadedFileType;
 
@@ -44,11 +40,7 @@ export default function FilesModal(props) {
 
   return (
     <div>
-      {fileType === "jpg" ||
-      fileType === "png" ||
-      fileType === "jpeg" ||
-      fileType === "bmp" ||
-      fileType === "gif" ? (
+      {fileType === "jpg" || fileType === "png" || fileType === "jpeg" || fileType === "bmp" || fileType === "gif" ? (
         <>
           <p
             type="button"
