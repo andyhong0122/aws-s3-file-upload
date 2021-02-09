@@ -1,3 +1,12 @@
-# File Upload Functionality in React, .Net, and SQL using AWS S3
+# File Upload Functionality
 
-File upload is an essential functionality of almost any responsive website. 
+File upload is an essential functionality of almost any responsive website that hosts a service to the user.
+
+# JavaScript / React.js
+
+# C# / .Net Core
+
+# SQL / MSSQL
+
+
+
